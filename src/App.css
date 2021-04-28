@@ -1,0 +1,60 @@
+ .sidebar {
+  display: block; /* Make the links appear below each other instead of side-by-side */
+  text-align: center; /* Center-align text */
+  padding: 16px; /* Add some padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+  font-size: 36px; /* Increased font-size */
+}
+
+.sidebar:hover {
+  background-color: rgb(204, 12, 38); /* Add a hover color */
+}
+
+.active {
+  background-color: #4CAF50; /* Add an active/current color */
+}
+
+
+.navbar{
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #b3afaf;
+  overflow: hidden;
+  top: 5px;
+  padding-bottom: 10px;
+  padding-top: 7px;
+  padding-left: 30px;
+  padding-right: 35px;
+  text-decoration: none;
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+ }
+ .vl {
+  border-left: 8px solid rgb(8 61 95);
+}
+.navbar:after {
+  content: "";
+  position: absolute;
+  border-radius: 100px;
+  background-color: rgb(216, 0, 0);
+  height: 5px;
+  width: 0%;
+  color:rgb(22, 5, 5);
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 0;
+  transition: .35s ease;
+  text-decoration: none;
+}
+
+.navbar:hover:after {
+  width: 70%;
+  color:#000;
+}
